@@ -15,6 +15,9 @@ set relativenumber " Relative line numbers
 set wrap " Word wrapping
 set incsearch " Incremental seraching
 
+set ignorecase
+set smartcase " switches to case-sensitive if upper case char
+
 " Split settings
 set splitbelow
 set splitright
@@ -46,13 +49,17 @@ Plug 'VundleVim/Vundle.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'vimwiki/vimwiki'
 Plug 'udalov/kotlin-vim'
-" Plugin 'ctrlpvim/ctrlp.vim' <-- can make like Cmd+Shift+R for file search in
+Plug 'ctrlpvim/ctrlp.vim' " Ctrl+P to fuzzy search files in dir
 " IntelliJ --> apparently fzf is faster
 " Plugin scrooloose/nerdcommenter <-- can select multi line to comment
 " Plugin 'airplace/vim-gitgutter <-- shows lines changes in git, like in
 " IntelliJ
 " "fcf" apparently is also a good fast file search plugin : https://github.com/junegunn/fzf/blob/master/README-VIM.md
 call plug#end()
+
+source $HOME/.config/nvim/init-coc.vim
+source $HOME/.config/nvim/init-sneak.vim
+source $HOME/.config/nvim/init-coc-explorer.vim
 
 filetype plugin indent on  " allows auto-indenting depending on file type
 
@@ -71,13 +78,9 @@ autocmd BufEnter * if bufname('#') =~# "^NERD_tree_" && winnr('$') > 1 | b# | en
 
 "" Other Stuff
 
-source $HOME/.config/nvim/init-coc.vim
-source $HOME/.config/nvim/init-sneak.vim
-
 autocmd BufReadPost *.kt setlocal filetype=kotlin
 
-let g:LanguageClient_serverCommands = {
-    \ 'kotlin': ["kotlin-language-server"],
-    \ }
+" Not needed if using coc. Check here: https://github.com/fwcd/kotlin-language-server/blob/master/EDITORS.md
+" let g:LanguageClient_serverCommands = { 'kotlin': ["kotlin-language-server"], }
 
 
