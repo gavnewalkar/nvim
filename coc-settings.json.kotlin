@@ -5,6 +5,11 @@
       "rootPatterns": ["go.mod"],
       "trace.server": "verbose",
       "filetypes": ["go"]
+    },
+    "kotlin": {
+      "command": "/Users/gavnewalkar/code/kotlin-language-server/server/build/install/server/bin/kotlin-language-server",
+      "filetypes": ["kotlin"],
+      "trace.server": "verbose"
     }
   },
   "explorer.width": 30,

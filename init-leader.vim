@@ -6,17 +6,24 @@ nnoremap <Leader>q :bd<CR>
 
 " Buffers
 
+nnoremap <A-}> :bn<CR>
+nnoremap <A-{> :bp<CR>
+"" New empty buffer:
+map <A-P> :enew
+"" Switch between same 2 buffers:
+map <A-O> <C-^>
+
 " Tabs
 
 " TODO - alt ] [ maybe for moving around?
-nmap <A-+> :tabnew<CR>
-nmap <A-}> gt
-nmap <A-{> gT
-nmap <Leader>1 1gt
-nmap <Leader>2 2gt
-nmap <Leader>3 3gt
-nmap <Leader>4 4gt
-nmap <Leader>5 5gt
+nnoremap <A-)> :tabnew<CR>
+nnoremap <A-+> gt
+nnoremap <A-_> gT
+nnoremap <Leader>1 1gt
+nnoremap <Leader>2 2gt
+nnoremap <Leader>3 3gt
+nnoremap <Leader>4 4gt
+nnoremap <Leader>5 5gt
 
 " Splitting
 
