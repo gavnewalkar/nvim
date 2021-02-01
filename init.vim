@@ -70,6 +70,7 @@ let g:vimwiki_url_maxsave=0
 " Key remapping
 nnoremap H gT
 nnoremap L gt
+imap <A-BS> <C-W>
 
 """ NerdTree Stuff
 
