@@ -42,7 +42,7 @@ call plug#begin('~/.config/nvim/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " Code completion
 Plug 'ThePrimeagen/vim-be-good'
-Plug 'morhetz/gruvbox'
+Plug 'morhetz/gruvbox' " Colour scheme
 Plug 'preservim/nerdtree' " File tree
 Plug 'justinmk/vim-sneak' " Search with 2 chars
 Plug 'VundleVim/Vundle.vim'
@@ -50,16 +50,14 @@ Plug 'airblade/vim-gitgutter'
 Plug 'vimwiki/vimwiki'
 Plug 'udalov/kotlin-vim'
 Plug 'ctrlpvim/ctrlp.vim' " Ctrl+P to fuzzy search files in dir
-" IntelliJ --> apparently fzf is faster
 " Plugin scrooloose/nerdcommenter <-- can select multi line to comment
-" Plugin 'airplace/vim-gitgutter <-- shows lines changes in git, like in
-" IntelliJ
-" "fcf" apparently is also a good fast file search plugin : https://github.com/junegunn/fzf/blob/master/README-VIM.md
+" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " Fuzzy finder
 call plug#end()
 
 source $HOME/.config/nvim/init-coc.vim
 source $HOME/.config/nvim/init-sneak.vim
 source $HOME/.config/nvim/init-coc-explorer.vim
+source $HOME/.config/nvim/init-leader.vim
 
 filetype plugin indent on  " allows auto-indenting depending on file type
 
