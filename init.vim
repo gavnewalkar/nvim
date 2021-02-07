@@ -1,16 +1,15 @@
 scriptencoding utf-8
 
-" Tabs etc
 set nowrap
 set tabstop=4 softtabstop=4
 set expandtab " Tab to spaces
 set shiftwidth=4
-
+set cmdheight=1 " Only 1 line at bottom
 set noswapfile
 set nobackup
 set undodir=~/.vim/undo
 set undofile
-
+set updatetime=1000 " Save changes every 1000 millis
 set relativenumber " Relative line numbers
 set wrap " Word wrapping
 set incsearch " Incremental seraching
