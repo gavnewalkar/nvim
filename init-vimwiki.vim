@@ -1,3 +1,6 @@
+let g:vimwiki_list = [{'syntax': 'markdown', 'ext': '.md', 'path': '~/Documents/vimwiki'}]
+let g:vimwiki_url_maxsave=0
+
 function! VimwikiLinkHandler(link)
     let link = a:link
     if link =~# '^vfile:'
