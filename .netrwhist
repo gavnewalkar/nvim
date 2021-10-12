@@ -1,4 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/Users/gavnewalkar'
+let g:netrw_dirhist_3='/Users/gavnewalkar/something'
 let g:netrw_dirhist_2='/Users/gavnewalkar/code/ewt-origin'
 let g:netrw_dirhist_1='/usr/local/Cellar/neovim/0.4.3/share/nvim/runtime'

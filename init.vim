@@ -55,6 +55,7 @@ Plug 'tpope/vim-commentary' " Easily comment lines
 Plug 'nvim-lua/popup.nvim' " Need for telescope
 Plug 'nvim-lua/plenary.nvim' " Need for telescope
 Plug 'nvim-telescope/telescope.nvim' " File finder
+Plug 'junegunn/goyo.vim' " Zen mode
 
 call plug#end()
 
