@@ -7,7 +7,7 @@ set shiftwidth=4
 set cmdheight=1 " Only 1 line at bottom
 set noswapfile
 set nobackup
-set undodir=~/.vim/undo
+set undodir=~/.config/nvim/undo
 set undofile
 set updatetime=1000 " Save changes every 1000 millis
 set relativenumber " Relative line numbers
