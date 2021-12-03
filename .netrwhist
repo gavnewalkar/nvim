@@ -1,5 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =4
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/Users/gavnewalkar/something'
+let g:netrw_dirhist_6='/Users/gavnewalkar'
+let g:netrw_dirhist_5='/Users/gavnewalkar/something'
 let g:netrw_dirhist_4='/Users/gavnewalkar'
 let g:netrw_dirhist_3='/Users/gavnewalkar/something'
 let g:netrw_dirhist_2='/Users/gavnewalkar/code/ewt-origin'

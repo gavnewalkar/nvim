@@ -34,7 +34,6 @@ endif
 
 call plug#begin('~/.config/nvim/plugged')
 
-" Plug 'neoclide/coc.nvim', {'branch': 'release'} " Code completion
 Plug 'ThePrimeagen/vim-be-good'
 " Plug 'morhetz/gruvbox' " Colour scheme
 Plug 'lifepillar/vim-gruvbox8' " Gruvbox Colour scheme - but faster
@@ -63,8 +62,6 @@ call plug#end()
 " Using autocmd/etc to ensure it runs _after_ all plugins
 autocmd vimenter * ++nested colorscheme gruvbox8
 
-" source $HOME/.config/nvim/init-coc.vim
-" source $HOME/.config/nvim/init-coc-explorer.vim
 source $HOME/.config/nvim/init-sneak.vim
 source $HOME/.config/nvim/init-leader.vim
 source $HOME/.config/nvim/init-vimwiki.vim
