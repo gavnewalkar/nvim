@@ -73,15 +73,6 @@ nnoremap <Leader>3t 3gt
 nnoremap <Leader>4t 4gt
 nnoremap <Leader>5t 5gt
 
-" Fzf file finding plugin
-
-nnoremap <leader>f :Files<CR>
-nnoremap <leader>b :Buffers<CR>
-if has('nvim') " Allow to exit fzf with ESC
-  au! TermOpen * tnoremap <buffer> <Esc> <c-\><c-n>
-  au! FileType fzf tunmap <buffer> <Esc>
-endif
-
 " Commenting out
 
 " Note: Bug with vim where / maps to _
