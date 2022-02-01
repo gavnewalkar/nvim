@@ -37,6 +37,7 @@ call plug#begin('~/.config/nvim/plugged')
 
 Plug 'ThePrimeagen/vim-be-good'
 Plug 'lifepillar/vim-gruvbox8' " Gruvbox Colour scheme - but faster
+Plug 'sainnhe/gruvbox-material' " Gruvbox material colour theme
 Plug 'savq/melange' " Melange colour theme
 Plug 'justinmk/vim-sneak' " Search with 2 chars
 Plug 'airblade/vim-gitgutter'
@@ -58,8 +59,13 @@ call plug#end()
 
 " Gruvbox colorschemd
 " Using autocmd/etc to ensure it runs _after_ all plugins
-autocmd vimenter * ++nested colorscheme gruvbox8
+" autocmd vimenter * ++nested colorscheme gruvbox8
 " autocmd vimenter * ++nested colorscheme melange
+autocmd vimenter * ++nested colorscheme gruvbox-material
+let g:gruvbox_material_background = 'hard'
+let g:gruvbox_material_enable_italic = 1
+let g:gruvbox_material_disable_italic_comment = 1
+
 
 source $HOME/.config/nvim/init-sneak.vim
 source $HOME/.config/nvim/init-leader.vim
@@ -83,6 +89,7 @@ let g:lightline = {
       \   'gitbranch': 'gitbranch#name'
       \ },
       \ }
+let g:lightline.colorscheme = 'gruvbox_material' " Override to this theme.
 
 " Other
 
