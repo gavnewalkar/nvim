@@ -1,4 +1,5 @@
-let g:vimwiki_list = [{'syntax': 'markdown', 'ext': '.md', 'path': '~/Documents/vimwiki'}]
+" let g:vimwiki_list = [{'syntax': 'markdown', 'ext': '.md', 'path': '~/documents/vimwiki'}]
+let g:vimwiki_list = [{'syntax': 'default', 'ext': '.wiki', 'path': '~/documents/vimwiki'}]
 let g:vimwiki_url_maxsave=0
 
 function! VimwikiLinkHandler(link)

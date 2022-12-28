@@ -21,6 +21,8 @@ set splitright " vsplit default behaviour
 set noshowmode " Don't show INSERT/VISUAL/etc since lightline plugin shows it.
 set laststatus=2
 set colorcolumn=100
+set mouse=
+set termguicolors
 syntax on
 
 " Fix colour issues with lightline
