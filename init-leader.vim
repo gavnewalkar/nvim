@@ -1,10 +1,15 @@
 " Leader Mappings
 
-" Principles:
+" Rules:
 " - Let's not mess with the Command key. Leave that to OS bindings.
-" - 
 
 let mapleader="\<Space>"
+
+" Quick files
+" TODO: \1 for init.vim
+" TODO: \2 for init-leader.vim
+" TODO: \r for reload all vim configs
+
 
 " Exit buffer
 nnoremap <silent><Leader>q :bd<CR>
@@ -42,6 +47,8 @@ map <A-O> <C-^>
 nnoremap <Leader>v :vnew<CR> " Vertical split
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
+" nnoremap <Leader>h <c-w>h
+" nnoremap <Leader>l <c-w>l
 
 " Maximising: These come by default with vim-maximizer:
 " nnoremap <silent><F3> :MaximizerToggle<CR>
@@ -64,14 +71,14 @@ nnoremap <silent><C-l> <C-w>l
 
 " Tabs
 
-nnoremap <A-)> :tabnew<CR>
-nnoremap <A-+> gt
-nnoremap <A-_> gT
-nnoremap <Leader>1t 1gt
-nnoremap <Leader>2t 2gt
-nnoremap <Leader>3t 3gt
-nnoremap <Leader>4t 4gt
-nnoremap <Leader>5t 5gt
+" nnoremap <A-)> :tabnew<CR>
+" nnoremap <A-+> gt
+" nnoremap <A-_> gT
+" nnoremap <Leader>1t 1gt
+" nnoremap <Leader>2t 2gt
+" nnoremap <Leader>3t 3gt
+" nnoremap <Leader>4t 4gt
+" nnoremap <Leader>5t 5gt
 
 " Commenting out
 
@@ -86,5 +93,7 @@ nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope git_files<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+nnoremap <leader><leader> <cmd>Telescope current_buffer_fuzzy_find<cr> 
+" TODO find files in current buffer's directory
 
 
